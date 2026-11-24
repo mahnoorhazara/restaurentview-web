@@ -1,0 +1,219 @@
+
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #111;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+/* Gold Color */
+.logo,
+.gold-text,
+.cart,
+footer h3 {
+    color: #d4af37;
+}
+
+.logo {
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.nav-link {
+    color: white !important;
+    margin-left: 12px;
+}
+
+.nav-link:hover {
+    color: #d4af37 !important;
+}
+
+.cart {
+    font-weight: bold;
+}
+
+/* Carousel */
+.carousel-item img {
+    height: 550px;
+    object-fit: cover;
+    filter: brightness(45%);
+}
+
+.carousel-caption {
+    bottom: 25%;
+}
+
+.carousel-caption h1 {
+    font-size: 45px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Buttons */
+.gold-btn {
+    background: #d4af37;
+    color: #111;
+    border: 1px solid #d4af37;
+    padding: 12px 25px;
+    font-weight: bold;
+}
+
+.gold-btn:hover {
+    background: transparent;
+    color: #d4af37;
+}
+
+/* Sections */
+section h2 {
+    color: #d4af37;
+    margin-bottom: 20px;
+}
+
+#about,
+#reservation {
+    background: #111;
+}
+
+#about p {
+    line-height: 1.8;
+}
+
+/* Menu */
+#menu {
+    background: #1b1b1b;
+}
+
+.category-btn {
+    color: white;
+    border: 1px solid #d4af37;
+    margin: 5px;
+}
+
+.category-btn:hover,
+.category-btn.active {
+    background: #d4af37;
+    color: black;
+}
+
+/* Food Cards */
+.card {
+    background: #292929;
+    color: white;
+    border: 1px solid #444;
+    transition: 0.3s;
+    overflow: hidden;
+}
+
+.card img {
+    height: 220px;
+    object-fit: cover;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 5px 18px rgba(212,175,55,0.4);
+}
+
+.price {
+    color: #d4af37;
+}
+
+/* Special Offer */
+.offer {
+    background: #302817;
+}
+
+.offer h2 {
+    font-size: 40px;
+}
+
+.offer p {
+    color: white;
+}
+
+/* Reservation */
+#reservation form {
+    max-width: 500px;
+}
+
+.form-control {
+    background: #292929;
+    color: white;
+    border: 1px solid #d4af37;
+    padding: 13px;
+}
+
+.form-control:focus {
+    background: #292929;
+    color: white;
+    border-color: #d4af37;
+    box-shadow: 0 0 5px #d4af37;
+}
+
+.form-control::placeholder {
+    color: #ccc;
+}
+
+input[type="date"] {
+    color-scheme: dark;
+}
+
+/* Contact */
+.contact {
+    background: #1b1b1b;
+    line-height: 2;
+}
+
+/* Footer */
+footer {
+    background: #080808;
+    color: white;
+}
+
+footer h3 {
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+    .carousel-item img {
+        height: 400px;
+    }
+
+    .carousel-caption {
+        bottom: 15%;
+    }
+
+    .carousel-caption h1 {
+        font-size: 28px;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .carousel-item img {
+        height: 350px;
+    }
+
+    .carousel-caption h1 {
+        font-size: 23px;
+    }
+
+    .carousel-caption p {
+        font-size: 12px;
+    }
+
+}
